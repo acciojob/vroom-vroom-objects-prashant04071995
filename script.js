@@ -9,17 +9,17 @@ Car.prototype.getMakeModel=function(){
     return `${this.make} ${this.model}`;
 }
 
-function sportsCar(make,model,topSpeed){
+function SportsCar(make,model,topSpeed){
     Car.call(this,make,model);
     this.topSpeed=topSpeed;
     
 }
 
-sportsCar.prototype=Object.create(Car.prototype);
-sportsCar.prototype.constructor=sportsCar;
+SportsCar.prototype=Object.create(Car.prototype);
+SportsCar.prototype.constructor=SportsCar;
 
 
-sportsCar.prototype.getTopSpeed=function(){
+SportsCar.prototype.getTopSpeed=function(){
     return this.topSpeed;
 }
 
